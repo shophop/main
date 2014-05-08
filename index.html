@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<title>ShopHop Testing Build</title>
+		<meta name="viewport" width="device-width" content="initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="translucent black" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" media="all" href="css/style.css" />
+		<script type="text/javascript" src="//use.typekit.net/pxt5sbu.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+		<script src="scripts/jquery.easing.1.3.js"></script>
+		<script src="scripts/ui.js"></script>
+		
+
+	</head>
+		
+	<body>
+		<div class="bg-image"></div>
+		<div class="container"></div>
+		<div id="homepage">
+			<div class="header"><h1>ShopHop</h1></div>
+			<div id="main-page-content" class="scrollable">
+				<div class="main-item category-choice">
+					<h2 id="category-label">FIND LOCAL</h2>
+					<ul id="category-chooser">
+						<li>GAMES
+						<li>GIFTS
+						<li class="choice">CLOTHES
+						<li>TOYS
+						<li>FURNITURE
+					</ul>
+				</div>
+				<form class="main-item search-box" action="/search.jsp" method="GET">
+					<input type=text name=query placeholder="What are you looking for?">
+				</form>
+				<div class="main-item window-shop-button"><h2>WINDOW SHOP</h2></div>
+				<div class="main-item spacer"></div>
+				<div class="main-item options-button">
+					<h2>MORE OPTIONS</h2>
+					<canvas id="pointer-line" height="20px" width="600"></canvas>
+				</div>
+				<div id="main-page-options">
+					<div class="menu-option" id="create-account">
+						<div class="option-title"><h2>CREATE ACCOUNT</h2></div>
+						<p class="close-menu-option">CLOSE</p>
+						<div class="option-divider"></div>
+						<div class="option-description"><p>Request holds, save finds, search history, connect with shops and more.</p></div>
+						<div class="menu-option-content">
+							<form class="create-account-form">
+								<input type="text" name="first-name" placeholder="First" style="width: calc(50% - 21px);">
+								<input type="text" name="last-name" placeholder="Last" style="width: calc(50% - 21px);">
+								<div class="form-label">NAME</div>
+								<input type="text" name="first-name" placeholder="Your Location" style="width: calc(100% - 21px);">
+
+								<div class="form-label">LOCATION</div>
+								<button class="form-submit" type="submit" value="Create Account">CREATE ACCOUNT</button>
+							</form>
+						</div>
+					</div>
+					<div class="menu-option" id="add-your-shop">
+						<div class="option-title"><h2>ADD YOUR SHOP</h2></div>
+						<p class="close-menu-option">CLOSE</p>
+						<div class="option-divider"></div>
+						<div class="option-description"><p>Create a unique portal for your shop, Let shoppers find your products.</p></div>
+						<div class="menu-option-content">
+							<form></form>
+						</div>
+					</div>
+					<div class="menu-option" id="suggest-a-shop">
+						<div class="option-title"><h2>SUGGEST A SHOP</h2></div>
+						<p class="close-menu-option">CLOSE</p>
+						<div class="option-divider"></div>
+						<div class="option-description"><p>Let us know about great shops that aren’t yet on ShopHop.</p></div>
+						<div class="menu-option-content">
+							<form></form>
+						</div>
+					</div>
+					<div class="menu-option" id="contact-us">
+						<div class="option-title"><h2>CONTACT US</h2></div>
+						<p class="close-menu-option">CLOSE</p>
+						<div class="option-divider"></div>
+						<div class="option-description"><p>Questions or concerns? Let us know what you think.</p></div>
+						<div class="menu-option-content">
+							<form></form>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</body>
+  
+</html>
